@@ -1,0 +1,32 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+int deger(int n)
+{
+	if(n%2==0)
+	{
+		return 1;
+	}
+	else
+	{
+		return 2;
+	}
+}
+
+int main()
+{
+	int a;
+	int sonuc;
+	printf("Lutfen pozitif bir tam sayi giriniz\n");
+	scanf("%d",&a);
+	sonuc=deger(a);
+	if(sonuc==1)
+	{
+		printf("%d sayisi cifttir",a);
+	}
+	else
+	{
+		printf("%d sayisi tektir",a);
+	}
+	return 0;
+}
